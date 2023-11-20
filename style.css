@@ -1,0 +1,188 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  #container {
+    width: 100%;
+    height: 100%;
+    background-color: #9ca1a1;
+  }
+  
+  #outerBox {
+    width: 25vw;
+    height: 90vh;
+    border: 1px solid black;
+    border-radius: .5rem;
+    position: relative;
+    left: 37.5vw;
+    top: 5vh;
+    background-color: #e6e4e1;
+    z-index: 10;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  #title {
+    width: 100%;
+    height: 10vh;
+    border-radius: .5rem;
+    background-color: #0b9cb5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: Sans-serif;
+    
+  }
+  
+  #contentBoxMain {
+    width: 22vw;
+    height: 80vh;
+    padding: 3vh 1.5vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: Sans-serif;
+    
+  }
+  .content {
+    width: 22vw;
+    height: 15vh;
+  }
+  #contentBox1 > div > i {
+    font-size: 25px;
+  }
+  
+  #contentBox1 > div > input {
+    height: 5vh;
+    width: 15vw;
+    margin-left: 1vw;
+    border: 1px solid #7e7f80;
+    border-radius: 0.4rem;
+    font-size: 15px;
+  }
+  #contentBox1 > div > input[type='number']::-webkit-outer-spin-button, #contentBox1 > div > input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  #contentBox2 {
+    height: 20vh;
+  }
+  #contentBox2 > select {
+    height: 6vh;
+    width: 16vw;
+    margin-left: 2vw;
+    border: 1px solid #7e7f80;
+    border-radius: 0.4rem;
+    font-size: 15px;
+  }
+  
+  #contentBox3 {
+    height: 16vh;
+  }
+  #contentBox3 > input {
+    height: 5vh;
+    width: 15.5vw;
+    margin-left: 2vw;
+    border: 1px solid #7e7f80;
+    border-radius: 0.4rem;
+    font-size: 15px;
+  }
+  #contentBox3 > input[type='number']::-webkit-outer-spin-button, #contentBox3 > input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  #contentBox4 {
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #button {
+    margin: 1vh .5vw;
+    height: 5vh;
+    width: 10vw;
+    font-size: 12px;
+    font-weight: bolder;
+    color:  #474747;
+    background-color: #edb9c1;
+    border: 1px solid #7e7f80;
+    border-radius: 0.4rem;
+  }
+  #button:hover {
+    background-color: #f54c66;
+    color: white;
+  }
+  #clearButton {
+    margin: 1vh .5vw;
+    height: 5vh;
+    width: 10vw;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #474747;
+    background-color: #a4d1ed;
+    border: 1px solid #7e7f80;
+    border-radius: 0.4rem;
+  }
+  #clearButton:hover {
+    background-color: #52e1f7;
+    color: white;
+  }
+  
+  #contentBox5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .5em;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    z-index: 8;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  #contentBox5 > p {
+    margin: .5em 0em 0.2em;
+    font-weight: bolder;
+  }
+  #contentBox5 > div {
+    margin: .3em;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #058080;
+  }
+  
+  @media all and (max-width: 800px) {
+    #outerBox {
+      width: 90vw;
+      left: 5vw;
+      top: 5vh;
+    }
+    #contentBoxMain {
+      width: 80vw;
+    }
+    .content {
+      width: 80vw;
+    }
+    #contentBox1 > div > input {
+      width: 70vw;
+    }
+    #contentBox2 > select {
+      width: 75vw;
+      margin-left: 5vw;
+    }
+    #contentBox3 > input {
+      width: 75vw;
+      margin-left: 5vw;
+    }
+    #contentBox4 > button {
+      width: 70vw;
+    }
+    #contentBox5 {
+      margin: .5em 0em 0em .6em;
+    }
+  }

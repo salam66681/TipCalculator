@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="outerBox">
+      <div id="title">Tip Calculator</div>
+
+      <div id="contentBoxMain">
+
+        <div class="content" id="contentBox1">
+          <p>Enter your bill amount</p>
+          <div>
+            <i class="fa fa-inr"></i>
+            <input type="number" name="billAmount" id="amount">
+          </div>
+        </div>
+
+        <div class="content" id="contentBox2">
+          <p>How was the service?</p>
+          <select id="serviceQual">
+            <option value="0">-Select-</option>
+            <option value=".25">Excelent - 25%</option>
+            <option value=".1">Medium - 10%</option>
+            <option value=".05">Not So Good - 5%</option>
+          </select>
+        </div>
+
+        <div class="content" id="contentBox3">
+          <p>How many people are sharing the bill?</p>
+          <input type="number" name="people" id="people">
+        </div>
+
+        <div class="content" id="contentBox4">
+          <button type="submit" id="button">CALCULATE</button>
+          <button type="reset" id="clearButton">Clear All</button>
+        </div>
+
+        <div class="content" id="contentBox5">
+          <p>-*- Tip Amount -*-</p>
+          <div id="tipAmount"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
